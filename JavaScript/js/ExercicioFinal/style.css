@@ -11,12 +11,11 @@ body {
 #form {
     position: absolute;
     width: 360px;
-    height: 320px;
     height: auto;
     background-color: #fff;
     margin: auto;
     border-radius: 5px;
-    padding: 20px 20px 20px 45px;
+    padding: 20px;
     left: 50%;
     top: 50%;
     margin-left: -180px;
@@ -25,8 +24,8 @@ body {
 
 .img {
     width: 260px;
-    height: 220px;
     height: auto;
+    padding-left: 50px;
     padding-bottom: 10px;
 }
 
@@ -109,4 +108,17 @@ input {
     top: 2px;
     transition: all .4s ease;
     color: #bbb;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E0C3FC;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #58bff6;
+    border-radius: 30px;
 }
