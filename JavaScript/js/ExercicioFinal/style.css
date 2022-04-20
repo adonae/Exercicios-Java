@@ -122,3 +122,8 @@ input {
     background: #58bff6;
     border-radius: 30px;
 }
+
+.resultado {
+    text-align: center;
+    color: #58bff6;
+}
