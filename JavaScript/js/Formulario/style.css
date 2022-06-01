@@ -1,0 +1,129 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-bg {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+#form {
+    position: absolute;
+    width: 360px;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    left: 50%;
+    top: 50%;
+    margin-left: -180px;
+    margin-top: -260px;
+}
+
+.img {
+    width: 260px;
+    height: auto;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.button {
+    padding: 0.8em 1.8em;
+    border: 1px solid #17C3B2;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.button:hover::before {
+    width: 105%;
+}
+
+.button:hover {
+    color: #111;
+}
+
+.form-item {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input {
+    transition: all .2s ease;
+}
+
+.form-style {
+    color: #8a8a8a;
+    display: block;
+    width: 90%;
+    height: 44px;
+    padding: 5px 5%;
+    border: 1px solid #ccc;
+    -moz-border-radius: 27px;
+    -webkit-border-radius: 27px;
+    border-radius: 27px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 105%;
+    letter-spacing: .8px;
+}
+
+.form-item .form-style:focus {
+    outline: none;
+    border: 1px solid #58bff6;
+    color: #58bff6;
+}
+
+.form-item p.formLabel {
+    position: absolute;
+    left: 26px;
+    top: 2px;
+    transition: all .4s ease;
+    color: #bbb;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E0C3FC;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #58bff6;
+    border-radius: 30px;
+}
+
+.resultado {
+    text-align: center;
+    color: #58bff6;
+}
